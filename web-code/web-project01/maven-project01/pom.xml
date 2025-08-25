@@ -14,7 +14,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <!--配置依赖-->
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
@@ -25,8 +24,7 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
             <version>5.9.1</version>
-
-        </dependency>
+            <scope>test</scope> </dependency>
     </dependencies>
 
 

@@ -10,9 +10,10 @@
         <module name="maven-project01" />
         <module name="maven-project02" />
         <module name="maven-project03" />
+        <module name="jdbc-demo2" />
         <module name="springbiit-web-quickstart" />
       </profile>
-      <profile name="Annotation profile for springboot-web-01" enabled="true">
+      <profile name="Annotation profile for springboot-mybatis-quickstart" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -20,13 +21,15 @@
           <entry name="$PROJECT_DIR$/../../../tool/apache-maven-3.9.4/mvn_repo/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
         <module name="springboot-web-01" />
+        <module name="springboot-mybatis-quickstart" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="21" />
+    <bytecodeTargetLevel target="17" />
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="springbiit-web-quickstart" options="-parameters" />
+      <module name="springboot-mybatis-quickstart" options="-parameters" />
       <module name="springboot-web-01" options="-parameters" />
     </option>
   </component>
