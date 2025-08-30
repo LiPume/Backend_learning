@@ -13,12 +13,12 @@
         <module name="jdbc-demo2" />
         <module name="springbiit-web-quickstart" />
       </profile>
-      <profile name="Annotation profile for springboot-mybatis-quickstart" enabled="true">
+      <profile name="Annotation profile for springboot-web-01" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
-          <entry name="$PROJECT_DIR$/../../../tool/apache-maven-3.9.4/mvn_repo/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+          <entry name="$PROJECT_DIR$/../../../../tool/apache-maven-3.9.4/mvn_repo/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
         <module name="springboot-web-01" />
         <module name="springboot-mybatis-quickstart" />
