@@ -3,6 +3,51 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.itheima.mapper.EmpMapper">
+    <update id="updateById">
+        update emp
+        <set>
+            <if test="username != null and username !=''">
+                username = #{username},
+            </if>
+            <if test="password != null and password !=''">
+                password = #{password},
+            </if>
+            <if test="name != null and name !=''">
+                name = #{name},
+            </if>
+            <if test="gender != null">
+                gender = #{gender},
+            </if>
+            <if test="phone != null and phone !=''">
+                phone = #{phone},
+            </if>
+            <if test="job != null">
+                job = #{job},
+            </if>
+            <if test="salary != null">
+                salary = #{salary},
+            </if>
+            <if test="image != null and image !=''">
+                image = #{image},
+            </if>
+            <if test="entryDate != null">
+                entry_date = #{entryDate},
+            </if>
+            <if test="deptId != null">
+                dept_id = #{deptId},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+    <delete id="deleteByIds">
+            delete from emp where id in
+        <foreach item="id" collection="ids" separator="," open="(" close=")" >
+            #{id}
+        </foreach>
+    </delete>
 
     <select id="list" resultType="com.itheima.pojo.Emp">
         select emp.*, d.name deptName
@@ -21,5 +66,61 @@
             </if>
         </where>
         order by update_time desc
+    </select>
+    <resultMap id="empResultMap" type="com.itheima.pojo.Emp">
+        <id property="id" column="id"/>
+        <result property="username" column="username"/>
+        <result property="password" column="password"/>
+        <result property="name" column="name"/>
+        <result property="gender" column="gender"/>
+        <result property="phone" column="phone"/>
+        <result property="job" column="job"/>
+        <result property="salary" column="salary"/>
+        <result property="image" column="image"/>
+        <result property="entryDate" column="entry_date"/>
+        <result property="deptId" column="dept_id"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+        <collection property="exprList" ofType="com.itheima.pojo.EmpExpr">
+            <id property="id" column="ee_id"/>
+            <result property="company" column="ee_company"/>
+            <result property="job" column="ee_job"/>
+            <result property="begin" column="ee_begin"/>
+            <result property="end" column="ee_end"/>
+            <result property="empId" column="ee_empid"/>
+        </collection>
+    </resultMap>
+    <select id="getInfoById" resultMap="empResultMap">
+        select
+            e.*,
+            ee.id ee_id,
+            ee.company ee_company,
+            ee.job ee_job,
+            ee.begin ee_begin,
+            ee.end ee_end,
+            ee.emp_id ee_empid
+        from emp e left join emp_expr ee on e.id = ee.emp_id
+        where e.id = #{id}
+    </select>
+    <select id="countEmpJobData" resultType="java.util.Map">
+        select
+            (case when job = 1 then '班主任'
+                when job = 2 then '讲师'
+                when job = 3 then '学工主管'
+                when job = 4 then '教研主管'
+                when job = 5 then '咨询师'
+                else '其他'
+                end) pos,count(*) num
+        from emp
+        group by job
+        order by num
+    </select>
+    <select id="countEmpGenderData" resultType="java.util.Map">
+        select
+            (case when gender = 1 then '男性员工'
+                when gender = 2 then '女性员工'
+                end) name,count(*) value
+        from emp
+        group by gender
     </select>
 </mapper>

@@ -12,7 +12,7 @@
 2025-08-31 22:02:22.105 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
 2025-08-31 22:02:22.105 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
 2025-08-31 22:02:22.105 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 0 ms
-2025-08-31 22:02:22.140 [http-nio-8080-exec-2] INFO  com.itheima.controller.conrtroller.EmpController-分页请求参数：1,10
+2025-08-31 22:02:22.140 [http-nio-8080-exec-2] INFO  com.itheima.controller.EmpController-分页请求参数：1,10
 2025-08-31 22:02:22.212 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
 2025-08-31 22:02:22.579 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45ac5689
 2025-08-31 22:02:22.580 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
@@ -34,7 +34,7 @@
 2025-08-31 22:26:58.155 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
 2025-08-31 22:26:58.155 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
 2025-08-31 22:26:58.157 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
-2025-08-31 22:26:58.185 [http-nio-8080-exec-2] INFO  com.itheima.controller.conrtroller.EmpController-分页请求参数：1,10
+2025-08-31 22:26:58.185 [http-nio-8080-exec-2] INFO  com.itheima.controller.EmpController-分页请求参数：1,10
 2025-08-31 22:26:58.247 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
 2025-08-31 22:26:58.598 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@14c82c88
 2025-08-31 22:26:58.600 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
@@ -56,12 +56,12 @@
 2025-08-31 23:04:53.342 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
 2025-08-31 23:04:53.342 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
 2025-08-31 23:04:53.343 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
-2025-08-31 23:04:53.366 [http-nio-8080-exec-1] INFO  com.itheima.controller.conrtroller.DeptController-查询全部部门数据
+2025-08-31 23:04:53.366 [http-nio-8080-exec-1] INFO  com.itheima.controller.DeptController-查询全部部门数据
 2025-08-31 23:04:53.380 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
 2025-08-31 23:04:53.869 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6acbb93
 2025-08-31 23:04:53.870 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
-2025-08-31 23:04:54.906 [http-nio-8080-exec-3] INFO  com.itheima.controller.conrtroller.EmpController-分页请求参数：1,10
-2025-08-31 23:04:55.201 [http-nio-8080-exec-4] INFO  com.itheima.controller.conrtroller.DeptController-查询全部部门数据
+2025-08-31 23:04:54.906 [http-nio-8080-exec-3] INFO  com.itheima.controller.EmpController-分页请求参数：1,10
+2025-08-31 23:04:55.201 [http-nio-8080-exec-4] INFO  com.itheima.controller.DeptController-查询全部部门数据
 2025-08-31 23:04:55.785 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]-Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.BadSqlGrammarException: 
 ### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '},'%') and
             emp.gender = { gender} and emp.entry_date between { begin' at line 3
@@ -109,7 +109,7 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
 	at jdk.proxy2/jdk.proxy2.$Proxy72.list(Unknown Source)
 	at com.itheima.service.impl.EmpServiceImpl.page(EmpServiceImpl.java:27)
-	at com.itheima.controller.conrtroller.EmpController.page(EmpController.java:33)
+	at com.itheima.controller.EmpController.page(EmpController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
@@ -158,7 +158,7 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-08-31 23:05:15.940 [http-nio-8080-exec-2] INFO  com.itheima.controller.conrtroller.EmpController-分页请求参数：1,10
+2025-08-31 23:05:15.940 [http-nio-8080-exec-2] INFO  com.itheima.controller.EmpController-分页请求参数：1,10
 2025-08-31 23:05:15.965 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]-Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.BadSqlGrammarException: 
 ### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '},'%') and
             emp.gender = { gender} and emp.entry_date between { begin' at line 3
@@ -206,7 +206,7 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
 	at jdk.proxy2/jdk.proxy2.$Proxy72.list(Unknown Source)
 	at com.itheima.service.impl.EmpServiceImpl.page(EmpServiceImpl.java:27)
-	at com.itheima.controller.conrtroller.EmpController.page(EmpController.java:33)
+	at com.itheima.controller.EmpController.page(EmpController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
@@ -255,7 +255,7 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-08-31 23:05:17.444 [http-nio-8080-exec-5] INFO  com.itheima.controller.conrtroller.EmpController-分页请求参数：1,10
+2025-08-31 23:05:17.444 [http-nio-8080-exec-5] INFO  com.itheima.controller.EmpController-分页请求参数：1,10
 2025-08-31 23:05:17.453 [http-nio-8080-exec-5] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]-Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.BadSqlGrammarException: 
 ### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '},'%') and
             emp.gender = { gender} and emp.entry_date between { begin' at line 3
@@ -303,7 +303,7 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
 	at jdk.proxy2/jdk.proxy2.$Proxy72.list(Unknown Source)
 	at com.itheima.service.impl.EmpServiceImpl.page(EmpServiceImpl.java:27)
-	at com.itheima.controller.conrtroller.EmpController.page(EmpController.java:33)
+	at com.itheima.controller.EmpController.page(EmpController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
@@ -352,7 +352,7 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-08-31 23:05:25.665 [http-nio-8080-exec-6] INFO  com.itheima.controller.conrtroller.EmpController-分页请求参数：1,10
+2025-08-31 23:05:25.665 [http-nio-8080-exec-6] INFO  com.itheima.controller.EmpController-分页请求参数：1,10
 2025-08-31 23:05:25.676 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]-Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.BadSqlGrammarException: 
 ### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '},'%') and
             emp.gender = { gender} and emp.entry_date between { begin' at line 3
@@ -400,7 +400,7 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
 	at jdk.proxy2/jdk.proxy2.$Proxy72.list(Unknown Source)
 	at com.itheima.service.impl.EmpServiceImpl.page(EmpServiceImpl.java:27)
-	at com.itheima.controller.conrtroller.EmpController.page(EmpController.java:33)
+	at com.itheima.controller.EmpController.page(EmpController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
@@ -449,7 +449,7 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-08-31 23:05:27.346 [http-nio-8080-exec-7] INFO  com.itheima.controller.conrtroller.EmpController-分页请求参数：1,10
+2025-08-31 23:05:27.346 [http-nio-8080-exec-7] INFO  com.itheima.controller.EmpController-分页请求参数：1,10
 2025-08-31 23:05:27.359 [http-nio-8080-exec-7] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]-Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.BadSqlGrammarException: 
 ### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '},'%') and
             emp.gender = { gender} and emp.entry_date between { begin' at line 3
@@ -497,7 +497,7 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
 	at jdk.proxy2/jdk.proxy2.$Proxy72.list(Unknown Source)
 	at com.itheima.service.impl.EmpServiceImpl.page(EmpServiceImpl.java:27)
-	at com.itheima.controller.conrtroller.EmpController.page(EmpController.java:33)
+	at com.itheima.controller.EmpController.page(EmpController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
@@ -546,7 +546,7 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-08-31 23:05:27.529 [http-nio-8080-exec-9] INFO  com.itheima.controller.conrtroller.EmpController-分页请求参数：1,10
+2025-08-31 23:05:27.529 [http-nio-8080-exec-9] INFO  com.itheima.controller.EmpController-分页请求参数：1,10
 2025-08-31 23:05:27.545 [http-nio-8080-exec-9] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]-Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.BadSqlGrammarException: 
 ### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '},'%') and
             emp.gender = { gender} and emp.entry_date between { begin' at line 3
@@ -594,7 +594,7 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
 	at jdk.proxy2/jdk.proxy2.$Proxy72.list(Unknown Source)
 	at com.itheima.service.impl.EmpServiceImpl.page(EmpServiceImpl.java:27)
-	at com.itheima.controller.conrtroller.EmpController.page(EmpController.java:33)
+	at com.itheima.controller.EmpController.page(EmpController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
@@ -643,7 +643,7 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-08-31 23:05:27.675 [http-nio-8080-exec-8] INFO  com.itheima.controller.conrtroller.EmpController-分页请求参数：1,10
+2025-08-31 23:05:27.675 [http-nio-8080-exec-8] INFO  com.itheima.controller.EmpController-分页请求参数：1,10
 2025-08-31 23:05:27.692 [http-nio-8080-exec-8] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]-Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.BadSqlGrammarException: 
 ### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '},'%') and
             emp.gender = { gender} and emp.entry_date between { begin' at line 3
@@ -691,7 +691,7 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
 	at jdk.proxy2/jdk.proxy2.$Proxy72.list(Unknown Source)
 	at com.itheima.service.impl.EmpServiceImpl.page(EmpServiceImpl.java:27)
-	at com.itheima.controller.conrtroller.EmpController.page(EmpController.java:33)
+	at com.itheima.controller.EmpController.page(EmpController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
@@ -740,7 +740,7 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-08-31 23:06:03.541 [http-nio-8080-exec-10] INFO  com.itheima.controller.conrtroller.EmpController-分页请求参数：1,10
+2025-08-31 23:06:03.541 [http-nio-8080-exec-10] INFO  com.itheima.controller.EmpController-分页请求参数：1,10
 2025-08-31 23:06:03.557 [http-nio-8080-exec-10] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]-Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.BadSqlGrammarException: 
 ### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '},'%') and
             emp.gender = { gender} and emp.entry_date between { begin' at line 3
@@ -788,7 +788,7 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
 	at jdk.proxy2/jdk.proxy2.$Proxy72.list(Unknown Source)
 	at com.itheima.service.impl.EmpServiceImpl.page(EmpServiceImpl.java:27)
-	at com.itheima.controller.conrtroller.EmpController.page(EmpController.java:33)
+	at com.itheima.controller.EmpController.page(EmpController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
@@ -837,7 +837,7 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-08-31 23:06:04.973 [http-nio-8080-exec-1] INFO  com.itheima.controller.conrtroller.EmpController-分页请求参数：1,10
+2025-08-31 23:06:04.973 [http-nio-8080-exec-1] INFO  com.itheima.controller.EmpController-分页请求参数：1,10
 2025-08-31 23:06:04.987 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]-Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.BadSqlGrammarException: 
 ### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '},'%') and
             emp.gender = { gender} and emp.entry_date between { begin' at line 3
@@ -885,7 +885,7 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
 	at jdk.proxy2/jdk.proxy2.$Proxy72.list(Unknown Source)
 	at com.itheima.service.impl.EmpServiceImpl.page(EmpServiceImpl.java:27)
-	at com.itheima.controller.conrtroller.EmpController.page(EmpController.java:33)
+	at com.itheima.controller.EmpController.page(EmpController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
@@ -934,7 +934,7 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-08-31 23:06:59.555 [http-nio-8080-exec-3] INFO  com.itheima.controller.conrtroller.EmpController-分页请求参数：1,10
+2025-08-31 23:06:59.555 [http-nio-8080-exec-3] INFO  com.itheima.controller.EmpController-分页请求参数：1,10
 2025-08-31 23:06:59.569 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]-Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.BadSqlGrammarException: 
 ### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '},'%') and
             emp.gender = { gender} and emp.entry_date between { begin' at line 3
@@ -982,7 +982,7 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
 	at jdk.proxy2/jdk.proxy2.$Proxy72.list(Unknown Source)
 	at com.itheima.service.impl.EmpServiceImpl.page(EmpServiceImpl.java:27)
-	at com.itheima.controller.conrtroller.EmpController.page(EmpController.java:33)
+	at com.itheima.controller.EmpController.page(EmpController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
@@ -1031,7 +1031,7 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-08-31 23:07:30.508 [http-nio-8080-exec-5] INFO  com.itheima.controller.conrtroller.EmpController-分页请求参数：1,10
+2025-08-31 23:07:30.508 [http-nio-8080-exec-5] INFO  com.itheima.controller.EmpController-分页请求参数：1,10
 2025-08-31 23:07:30.514 [http-nio-8080-exec-5] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]-Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.BadSqlGrammarException: 
 ### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '},'%') and
             emp.gender = { gender} and emp.entry_date between { begin' at line 3
@@ -1079,7 +1079,7 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
 	at jdk.proxy2/jdk.proxy2.$Proxy72.list(Unknown Source)
 	at com.itheima.service.impl.EmpServiceImpl.page(EmpServiceImpl.java:27)
-	at com.itheima.controller.conrtroller.EmpController.page(EmpController.java:33)
+	at com.itheima.controller.EmpController.page(EmpController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
@@ -1146,13 +1146,13 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 2025-08-31 23:09:52.596 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
 2025-08-31 23:09:52.596 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
 2025-08-31 23:09:52.597 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
-2025-08-31 23:09:52.632 [http-nio-8080-exec-1] INFO  com.itheima.controller.conrtroller.EmpController-分页请求参数：1,10
+2025-08-31 23:09:52.632 [http-nio-8080-exec-1] INFO  com.itheima.controller.EmpController-分页请求参数：1,10
 2025-08-31 23:09:52.688 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
 2025-08-31 23:09:52.994 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@12ba799d
 2025-08-31 23:09:52.997 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
-2025-08-31 23:10:01.354 [http-nio-8080-exec-2] INFO  com.itheima.controller.conrtroller.EmpController-分页请求参数：1,10
-2025-08-31 23:10:05.567 [http-nio-8080-exec-7] INFO  com.itheima.controller.conrtroller.EmpController-分页请求参数：1,10
-2025-08-31 23:11:15.623 [http-nio-8080-exec-4] INFO  com.itheima.controller.conrtroller.EmpController-分页请求参数：1,10
+2025-08-31 23:10:01.354 [http-nio-8080-exec-2] INFO  com.itheima.controller.EmpController-分页请求参数：1,10
+2025-08-31 23:10:05.567 [http-nio-8080-exec-7] INFO  com.itheima.controller.EmpController-分页请求参数：1,10
+2025-08-31 23:11:15.623 [http-nio-8080-exec-4] INFO  com.itheima.controller.EmpController-分页请求参数：1,10
 2025-08-31 23:11:23.812 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
 2025-08-31 23:11:23.821 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
 2025-08-31 23:11:23.825 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...

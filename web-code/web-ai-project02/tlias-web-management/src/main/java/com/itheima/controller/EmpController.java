@@ -1,4 +1,4 @@
-package com.itheima.controller.conrtroller;
+package com.itheima.controller;
 
 
 import com.itheima.pojo.Emp;
@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Slf4j
 @RestController
@@ -32,6 +33,27 @@ public class EmpController {
     public Result save(@RequestBody Emp emp){
         log.info("新增员工：{}",emp);
         empService.save(emp);
+        return Result.success();
+    }
+
+    @DeleteMapping
+    public Result delete(@RequestParam List<Integer> ids){
+        log.info("删除员工：{}",ids);
+        empService.deleteByIds(ids);
+        return Result.success();
+    }
+
+    @GetMapping({"/{id}"})
+    public Result getInfo(@PathVariable Integer id){
+        log.info("查询员工：{}",id);
+        Emp emp = empService.getInfo(id);
+        return Result.success(emp);
+    }
+
+    @PutMapping
+    public Result update(@RequestBody Emp emp){
+        log.info("更新员工：{}",emp);
+        empService.update(emp);
         return Result.success();
     }
 }

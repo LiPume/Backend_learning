@@ -25,16 +25,16 @@
 2025-08-30 21:46:55.259 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
 2025-08-30 21:46:55.259 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
 2025-08-30 21:46:55.260 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
-2025-08-30 21:46:55.398 [http-nio-8080-exec-1] INFO  com.itheima.controller.conrtroller.DeptController-添加部门：Dept(id=null, name=万花筒, createTime=null, updateTime=null)
+2025-08-30 21:46:55.398 [http-nio-8080-exec-1] INFO  com.itheima.controller.DeptController-添加部门：Dept(id=null, name=万花筒, createTime=null, updateTime=null)
 2025-08-30 21:46:55.416 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
 2025-08-30 21:46:56.036 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75fbce55
 2025-08-30 21:46:56.039 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
-2025-08-30 21:46:56.248 [http-nio-8080-exec-3] INFO  com.itheima.controller.conrtroller.DeptController-查询全部部门数据
-2025-08-30 21:46:58.194 [http-nio-8080-exec-6] INFO  com.itheima.controller.conrtroller.DeptController-根据ID查询部门：10
-2025-08-30 21:47:05.332 [http-nio-8080-exec-4] INFO  com.itheima.controller.conrtroller.DeptController-修改部门：Dept(id=10, name=神威, createTime=2025-08-30T21:46:55, updateTime=2025-08-30T21:46:55)
-2025-08-30 21:47:05.349 [http-nio-8080-exec-5] INFO  com.itheima.controller.conrtroller.DeptController-查询全部部门数据
-2025-08-30 21:47:08.376 [http-nio-8080-exec-2] INFO  com.itheima.controller.conrtroller.DeptController-根据ID删除部门：10
-2025-08-30 21:47:08.393 [http-nio-8080-exec-7] INFO  com.itheima.controller.conrtroller.DeptController-查询全部部门数据
+2025-08-30 21:46:56.248 [http-nio-8080-exec-3] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-08-30 21:46:58.194 [http-nio-8080-exec-6] INFO  com.itheima.controller.DeptController-根据ID查询部门：10
+2025-08-30 21:47:05.332 [http-nio-8080-exec-4] INFO  com.itheima.controller.DeptController-修改部门：Dept(id=10, name=神威, createTime=2025-08-30T21:46:55, updateTime=2025-08-30T21:46:55)
+2025-08-30 21:47:05.349 [http-nio-8080-exec-5] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-08-30 21:47:08.376 [http-nio-8080-exec-2] INFO  com.itheima.controller.DeptController-根据ID删除部门：10
+2025-08-30 21:47:08.393 [http-nio-8080-exec-7] INFO  com.itheima.controller.DeptController-查询全部部门数据
 2025-08-30 21:47:43.619 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
 2025-08-30 21:47:43.631 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
 2025-08-30 21:47:43.636 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...

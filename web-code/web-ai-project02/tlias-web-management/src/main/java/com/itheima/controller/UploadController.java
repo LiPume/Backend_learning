@@ -1,4 +1,4 @@
-package com.itheima.controller.conrtroller;
+package com.itheima.controller;
 
 import com.itheima.pojo.Result;
 import com.itheima.utils.AliyunOSSOperator;
