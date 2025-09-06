@@ -33,9 +33,7 @@ public class DeptController {
     public Result delete(Integer id){
 
         log.info("根据ID删除部门：{}", id);
-
         deptservice.deleteById(id);
-
         return Result.success();
     }
 

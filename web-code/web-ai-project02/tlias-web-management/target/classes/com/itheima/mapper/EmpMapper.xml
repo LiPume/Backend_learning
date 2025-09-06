@@ -42,6 +42,24 @@
         </set>
         where id = #{id}
     </update>
+    <select id="countStudentCountData">
+        select clazz.name,count(*) num from clazz left join student on clazz.id = student.clazz_id
+        group by clazz.name
+        order by num
+    </select>
+    <select id="countStudentDegreeData">
+        select
+            (case when degree = 1 then '初中'
+                  when degree = 2 then '高中'
+                  when degree = 3 then '大专'
+                  when degree = 4 then '本科'
+                  when degree = 5 then '硕士'
+                  when degree = 6 then '博士'
+                  else '其他'
+                end)  as name ,count(*) as value
+        from student
+        group by degree
+    </select>
     <delete id="deleteByIds">
             delete from emp where id in
         <foreach item="id" collection="ids" separator="," open="(" close=")" >
@@ -119,7 +137,7 @@
         select
             (case when gender = 1 then '男性员工'
                 when gender = 2 then '女性员工'
-                end) name,count(*) value
+                end)  as name ,count(*) as value
         from emp
         group by gender
     </select>

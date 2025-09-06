@@ -29,4 +29,13 @@ public interface EmpMapper {
 
     @MapKey("name,value")
     List<Map<String, Object>> countEmpGenderData();
+
+    @Select("select emp.id,emp.name from emp where emp.job = 1")
+    List<Emp> masterList();
+
+    @MapKey("name,value")
+    List<Map<String, Object>> countStudentDegreeData();
+
+    @MapKey("name,num")
+    List<Map<String, Object>> countStudentCountData();
 }

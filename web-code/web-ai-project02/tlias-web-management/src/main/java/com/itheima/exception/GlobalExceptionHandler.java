@@ -25,4 +25,15 @@ public class GlobalExceptionHandler {
         String[] arr = errMsg.split(" ");
         return Result.error(arr[2]+"已存在");
     }
+    // 自定义异常
+    public static class ClazzHasStudentException extends RuntimeException {
+        public ClazzHasStudentException(String message) {
+            super(message);
+        }
+    }
+    @ExceptionHandler
+    public Result handleClazzHasStudentException(ClazzHasStudentException e) {
+        log.error("服务器发生异常：{}", e);
+        return Result.error(e.getMessage());
+    }
 }

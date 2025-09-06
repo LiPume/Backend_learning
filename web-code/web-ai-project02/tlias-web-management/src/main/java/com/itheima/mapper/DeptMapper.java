@@ -24,4 +24,7 @@ public interface DeptMapper {
 
     @Update("update dept set name=#{name},update_time=#{updateTime} where id=#{id}")
     void update(Dept dept);
+
+    @Select("select count(1) from emp where dept_id= #{id}")
+    int getEmpCountByDeptId(Integer id);
 }
