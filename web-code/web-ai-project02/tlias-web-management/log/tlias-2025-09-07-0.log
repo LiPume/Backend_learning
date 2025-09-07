@@ -1,0 +1,235 @@
+2025-09-07 18:37:03.441 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 21.0.2 with PID 23584 (E:\Project\BackEnd_learning\web-code\web-ai-project02\tlias-web-management\target\classes started by Dell in E:\Project\BackEnd_learning\web-code\web-ai-project02)
+2025-09-07 18:37:03.442 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-09-07 18:37:04.633 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-09-07 18:37:04.644 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-07 18:37:04.645 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-09-07 18:37:04.645 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-07 18:37:04.688 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-09-07 18:37:04.688 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1217 ms
+2025-09-07 18:37:05.392 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-09-07 18:37:05.402 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-09-07 18:37:05.408 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 2.289 seconds (process running for 3.059)
+2025-09-07 18:37:44.718 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-07 18:37:44.718 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-09-07 18:37:44.721 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 2 ms
+2025-09-07 18:37:44.729 [http-nio-8080-exec-1] INFO  com.itheima.filter.TokenFilter-获取到jwt令牌为空, 返回错误结果
+2025-09-07 18:37:48.389 [http-nio-8080-exec-2] INFO  com.itheima.filter.TokenFilter-解析令牌失败, 返回错误结果
+2025-09-07 18:37:48.389 [http-nio-8080-exec-3] INFO  com.itheima.filter.TokenFilter-解析令牌失败, 返回错误结果
+2025-09-07 18:37:59.901 [http-nio-8080-exec-7] INFO  com.itheima.filter.TokenFilter-登录请求 , 直接放行
+2025-09-07 18:38:00.075 [http-nio-8080-exec-7] INFO  com.itheima.controller.LoginController-登录信息：Emp(id=null, username=wuyong, password=123456, name=null, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-09-07 18:38:00.139 [http-nio-8080-exec-7] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-09-07 18:38:00.873 [http-nio-8080-exec-7] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11614237
+2025-09-07 18:38:00.878 [http-nio-8080-exec-7] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-09-07 18:38:02.914 [http-nio-8080-exec-6] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-07 18:38:02.914 [http-nio-8080-exec-5] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-07 18:38:02.922 [http-nio-8080-exec-6] INFO  com.itheima.controller.ClazzController-查询所有班级信息
+2025-09-07 18:38:02.939 [http-nio-8080-exec-5] INFO  com.itheima.controller.StudentController-学生信息分页查询:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-09-07 18:38:03.432 [http-nio-8080-exec-8] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-07 18:38:03.432 [http-nio-8080-exec-4] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-07 18:38:03.435 [http-nio-8080-exec-4] INFO  com.itheima.controller.EmpController-查询所有班主任
+2025-09-07 18:38:03.448 [http-nio-8080-exec-8] INFO  com.itheima.controller.ClazzController-分页查询班级信息，参数：ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-09-07 18:38:04.729 [http-nio-8080-exec-10] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-07 18:38:04.729 [http-nio-8080-exec-9] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-07 18:38:04.731 [http-nio-8080-exec-9] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-09-07 18:38:04.733 [http-nio-8080-exec-10] INFO  com.itheima.controller.EmpController-分页请求参数：EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-09-07 18:38:06.842 [http-nio-8080-exec-2] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-07 18:38:06.843 [http-nio-8080-exec-1] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-07 18:38:06.843 [http-nio-8080-exec-2] INFO  com.itheima.controller.ReportController-统计学生学历数据
+2025-09-07 18:38:06.843 [http-nio-8080-exec-1] INFO  com.itheima.controller.ReportController-统计学生数量数据
+2025-09-07 18:39:07.800 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-07 18:39:07.808 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-09-07 18:39:07.812 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-09-07 18:39:07.826 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-09-07 18:45:12.621 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 21.0.2 with PID 15364 (E:\Project\BackEnd_learning\web-code\web-ai-project02\tlias-web-management\target\classes started by Dell in E:\Project\BackEnd_learning\web-code\web-ai-project02)
+2025-09-07 18:45:12.622 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-09-07 18:45:13.520 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-09-07 18:45:13.530 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-07 18:45:13.532 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-09-07 18:45:13.532 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-07 18:45:13.566 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-09-07 18:45:13.566 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 917 ms
+2025-09-07 18:45:14.336 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-09-07 18:45:14.348 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-09-07 18:45:14.353 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 2.041 seconds (process running for 2.64)
+2025-09-07 18:45:19.855 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-07 18:45:19.855 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-09-07 18:45:19.856 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-09-07 18:45:19.905 [http-nio-8080-exec-1] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:45:19.905 [http-nio-8080-exec-5] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:45:19.910 [http-nio-8080-exec-1] INFO  com.itheima.controller.ClazzController-查询所有班级信息
+2025-09-07 18:45:19.919 [http-nio-8080-exec-5] INFO  com.itheima.controller.StudentController-学生信息分页查询:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-09-07 18:45:19.925 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-09-07 18:45:20.185 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@68a23178
+2025-09-07 18:45:20.186 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-09-07 18:45:21.704 [http-nio-8080-exec-2] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:45:21.704 [http-nio-8080-exec-4] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:45:21.706 [http-nio-8080-exec-4] INFO  com.itheima.controller.EmpController-查询所有班主任
+2025-09-07 18:45:21.714 [http-nio-8080-exec-2] INFO  com.itheima.controller.ClazzController-分页查询班级信息，参数：ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-09-07 18:45:22.433 [http-nio-8080-exec-6] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:45:22.434 [http-nio-8080-exec-6] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-09-07 18:45:23.056 [http-nio-8080-exec-3] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:45:23.056 [http-nio-8080-exec-7] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:45:23.056 [http-nio-8080-exec-7] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-09-07 18:45:23.059 [http-nio-8080-exec-3] INFO  com.itheima.controller.EmpController-分页请求参数：EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-09-07 18:45:25.910 [http-nio-8080-exec-8] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:45:25.910 [http-nio-8080-exec-9] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:45:25.910 [http-nio-8080-exec-9] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-09-07 18:45:25.910 [http-nio-8080-exec-8] INFO  com.itheima.controller.EmpController-分页请求参数：EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-09-07 18:45:27.525 [http-nio-8080-exec-10] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:45:27.525 [http-nio-8080-exec-1] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:45:27.526 [http-nio-8080-exec-1] INFO  com.itheima.controller.EmpController-查询所有班主任
+2025-09-07 18:45:27.526 [http-nio-8080-exec-10] INFO  com.itheima.controller.ClazzController-分页查询班级信息，参数：ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-09-07 18:45:28.213 [http-nio-8080-exec-4] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:45:28.213 [http-nio-8080-exec-5] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:45:28.213 [http-nio-8080-exec-4] INFO  com.itheima.controller.ClazzController-查询所有班级信息
+2025-09-07 18:45:28.213 [http-nio-8080-exec-5] INFO  com.itheima.controller.StudentController-学生信息分页查询:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-09-07 18:45:33.723 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-07 18:45:33.732 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-09-07 18:45:33.737 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-09-07 18:45:33.749 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-09-07 18:46:52.691 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 21.0.2 with PID 14792 (E:\Project\BackEnd_learning\web-code\web-ai-project02\tlias-web-management\target\classes started by Dell in E:\Project\BackEnd_learning\web-code\web-ai-project02)
+2025-09-07 18:46:52.693 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-09-07 18:46:53.357 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-09-07 18:46:53.367 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-07 18:46:53.368 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-09-07 18:46:53.368 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-07 18:46:53.401 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-09-07 18:46:53.403 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 687 ms
+2025-09-07 18:46:53.976 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-09-07 18:46:53.988 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-09-07 18:46:53.992 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 1.569 seconds (process running for 2.066)
+2025-09-07 18:46:55.056 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-07 18:46:55.056 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-09-07 18:46:55.058 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-09-07 18:46:55.161 [http-nio-8080-exec-2] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:46:55.161 [http-nio-8080-exec-1] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:46:55.172 [http-nio-8080-exec-1] INFO  com.itheima.controller.EmpController-查询所有班主任
+2025-09-07 18:46:55.196 [http-nio-8080-exec-2] INFO  com.itheima.controller.ClazzController-分页查询班级信息，参数：ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-09-07 18:46:55.207 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-09-07 18:46:55.456 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@76f6c646
+2025-09-07 18:46:55.457 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-09-07 18:46:56.760 [http-nio-8080-exec-4] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:46:56.760 [http-nio-8080-exec-3] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:46:56.760 [http-nio-8080-exec-3] INFO  com.itheima.controller.EmpController-查询所有班主任
+2025-09-07 18:46:56.760 [http-nio-8080-exec-4] INFO  com.itheima.controller.ClazzController-分页查询班级信息，参数：ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-09-07 18:46:57.688 [http-nio-8080-exec-6] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:46:57.688 [http-nio-8080-exec-5] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:46:57.688 [http-nio-8080-exec-6] INFO  com.itheima.controller.EmpController-查询所有班主任
+2025-09-07 18:46:57.689 [http-nio-8080-exec-5] INFO  com.itheima.controller.ClazzController-分页查询班级信息，参数：ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-09-07 18:47:45.347 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-07 18:47:45.353 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-09-07 18:47:45.356 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-09-07 18:47:45.360 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-09-07 18:48:48.576 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 21.0.2 with PID 29140 (E:\Project\BackEnd_learning\web-code\web-ai-project02\tlias-web-management\target\classes started by Dell in E:\Project\BackEnd_learning\web-code\web-ai-project02)
+2025-09-07 18:48:48.577 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-09-07 18:48:49.318 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-09-07 18:48:49.327 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-07 18:48:49.328 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-09-07 18:48:49.328 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-07 18:48:49.359 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-09-07 18:48:49.359 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 755 ms
+2025-09-07 18:48:49.954 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-09-07 18:48:49.992 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-09-07 18:48:50.003 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 1.722 seconds (process running for 2.172)
+2025-09-07 18:50:05.698 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-07 18:50:05.699 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-09-07 18:50:05.703 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 3 ms
+2025-09-07 18:50:05.904 [http-nio-8080-exec-1] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:50:05.904 [http-nio-8080-exec-2] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:50:05.936 [http-nio-8080-exec-1] INFO  com.itheima.controller.ClazzController-查询所有班级信息
+2025-09-07 18:50:05.972 [http-nio-8080-exec-2] INFO  com.itheima.controller.StudentController-学生信息分页查询:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-09-07 18:50:06.007 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-09-07 18:50:06.531 [http-nio-8080-exec-3] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:50:06.548 [http-nio-8080-exec-3] INFO  com.itheima.controller.ClazzController-分页查询班级信息，参数：ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-09-07 18:50:06.557 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56bdd054
+2025-09-07 18:50:06.559 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-09-07 18:50:06.862 [http-nio-8080-exec-4] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:50:06.866 [http-nio-8080-exec-4] INFO  com.itheima.controller.EmpController-查询所有班主任
+2025-09-07 18:50:08.680 [http-nio-8080-exec-5] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:50:08.681 [http-nio-8080-exec-5] INFO  com.itheima.controller.ReportController-统计各个职位员工人数
+2025-09-07 18:50:08.685 [http-nio-8080-exec-6] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:50:08.685 [http-nio-8080-exec-6] INFO  com.itheima.controller.ReportController-统计员工性别数据
+2025-09-07 18:50:20.552 [http-nio-8080-exec-7] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:50:20.553 [http-nio-8080-exec-7] INFO  com.itheima.controller.ClazzController-分页查询班级信息，参数：ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-09-07 18:50:20.568 [http-nio-8080-exec-8] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:50:20.568 [http-nio-8080-exec-8] INFO  com.itheima.controller.EmpController-查询所有班主任
+2025-09-07 18:50:21.243 [http-nio-8080-exec-10] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:50:21.243 [http-nio-8080-exec-9] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:50:21.243 [http-nio-8080-exec-9] INFO  com.itheima.controller.ClazzController-查询所有班级信息
+2025-09-07 18:50:21.244 [http-nio-8080-exec-10] INFO  com.itheima.controller.StudentController-学生信息分页查询:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-09-07 18:50:22.013 [http-nio-8080-exec-3] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:50:22.013 [http-nio-8080-exec-1] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:50:22.013 [http-nio-8080-exec-3] INFO  com.itheima.controller.EmpController-查询所有班主任
+2025-09-07 18:50:22.014 [http-nio-8080-exec-1] INFO  com.itheima.controller.ClazzController-分页查询班级信息，参数：ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-09-07 18:51:00.160 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-07 18:51:00.165 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-09-07 18:51:00.169 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-09-07 18:51:00.176 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-09-07 18:51:14.418 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 21.0.2 with PID 14868 (E:\Project\BackEnd_learning\web-code\web-ai-project02\tlias-web-management\target\classes started by Dell in E:\Project\BackEnd_learning\web-code\web-ai-project02)
+2025-09-07 18:51:14.420 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-09-07 18:51:15.166 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-09-07 18:51:15.177 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-07 18:51:15.179 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-09-07 18:51:15.179 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-07 18:51:15.217 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-09-07 18:51:15.217 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 768 ms
+2025-09-07 18:51:15.832 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-09-07 18:51:15.844 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-09-07 18:51:15.850 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 1.713 seconds (process running for 2.211)
+2025-09-07 18:51:23.150 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-07 18:51:23.150 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-09-07 18:51:23.150 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 0 ms
+2025-09-07 18:51:23.162 [http-nio-8080-exec-1] INFO  com.itheima.interceptor.TokenInterceptor-获取到jwt令牌为空, 返回错误结果
+2025-09-07 18:52:02.378 [http-nio-8080-exec-3] INFO  com.itheima.controller.LoginController-登录信息：Emp(id=null, username=wuyong, password=123456, name=null, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-09-07 18:52:02.447 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-09-07 18:52:03.107 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@639478d2
+2025-09-07 18:52:03.113 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-09-07 18:52:05.229 [http-nio-8080-exec-4] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:52:05.229 [http-nio-8080-exec-5] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:52:05.231 [http-nio-8080-exec-4] INFO  com.itheima.controller.ReportController-统计学生学历数据
+2025-09-07 18:52:05.231 [http-nio-8080-exec-5] INFO  com.itheima.controller.ReportController-统计学生数量数据
+2025-09-07 18:52:07.420 [http-nio-8080-exec-7] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:52:07.420 [http-nio-8080-exec-6] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:52:07.422 [http-nio-8080-exec-7] INFO  com.itheima.controller.ClazzController-查询所有班级信息
+2025-09-07 18:52:07.440 [http-nio-8080-exec-6] INFO  com.itheima.controller.StudentController-学生信息分页查询:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-09-07 18:52:08.126 [http-nio-8080-exec-9] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:52:08.127 [http-nio-8080-exec-8] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:52:08.128 [http-nio-8080-exec-9] INFO  com.itheima.controller.EmpController-查询所有班主任
+2025-09-07 18:52:08.140 [http-nio-8080-exec-8] INFO  com.itheima.controller.ClazzController-分页查询班级信息，参数：ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-09-07 18:52:09.874 [http-nio-8080-exec-2] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:52:09.874 [http-nio-8080-exec-2] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-09-07 18:52:09.875 [http-nio-8080-exec-10] INFO  com.itheima.interceptor.TokenInterceptor-令牌合法, 放行
+2025-09-07 18:52:09.883 [http-nio-8080-exec-10] INFO  com.itheima.controller.EmpController-分页请求参数：EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-09-07 18:52:12.695 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-07 18:52:12.703 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-09-07 18:52:12.715 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-09-07 18:52:12.728 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-09-07 18:53:11.565 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 21.0.2 with PID 27948 (E:\Project\BackEnd_learning\web-code\web-ai-project02\tlias-web-management\target\classes started by Dell in E:\Project\BackEnd_learning\web-code\web-ai-project02)
+2025-09-07 18:53:11.566 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-09-07 18:53:12.323 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-09-07 18:53:12.336 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-07 18:53:12.337 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-09-07 18:53:12.337 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-07 18:53:12.370 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-09-07 18:53:12.370 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 776 ms
+2025-09-07 18:53:13.061 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-09-07 18:53:13.075 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-09-07 18:53:13.081 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 1.769 seconds (process running for 2.238)
+2025-09-07 18:53:15.765 [http-nio-8080-exec-3] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-07 18:53:15.766 [http-nio-8080-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-09-07 18:53:15.766 [http-nio-8080-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 0 ms
+2025-09-07 18:53:15.817 [http-nio-8080-exec-3] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-07 18:53:15.817 [http-nio-8080-exec-1] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-07 18:53:15.835 [http-nio-8080-exec-3] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-09-07 18:53:15.847 [http-nio-8080-exec-1] INFO  com.itheima.controller.EmpController-分页请求参数：EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-09-07 18:53:15.852 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-09-07 18:53:16.111 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@64a70bc9
+2025-09-07 18:53:16.113 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-09-07 18:53:18.223 [http-nio-8080-exec-2] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-07 18:53:18.223 [http-nio-8080-exec-4] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-07 18:53:18.224 [http-nio-8080-exec-4] INFO  com.itheima.controller.ClazzController-查询所有班级信息
+2025-09-07 18:53:18.225 [http-nio-8080-exec-2] INFO  com.itheima.controller.StudentController-学生信息分页查询:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-09-07 18:53:40.156 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-07 18:53:40.166 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-09-07 18:53:40.174 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-09-07 18:53:40.186 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.

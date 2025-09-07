@@ -3,6 +3,7 @@ package com.itheima.service;
 
 import com.itheima.pojo.Emp;
 import com.itheima.pojo.EmpQueryParam;
+import com.itheima.pojo.LoginInfo;
 import com.itheima.pojo.PageResult;
 
 import java.time.LocalDate;
@@ -19,4 +20,6 @@ public interface EmpService {
     void update(Emp emp);
 
     List<Emp> masterList();
+
+    LoginInfo login(Emp emp);
 }

@@ -8,6 +8,7 @@ import com.itheima.mapper.EmpMapper;
 import com.itheima.pojo.*;
 import com.itheima.service.EmpLogService;
 import com.itheima.service.EmpService;
+import com.itheima.utils.JwtUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -16,7 +17,9 @@ import org.springframework.util.CollectionUtils;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class EmpServiceImpl implements EmpService {
@@ -100,5 +103,21 @@ public class EmpServiceImpl implements EmpService {
     @Override
     public List<Emp> masterList() {
         return empMapper.masterList();
+    }
+
+    @Override
+    public LoginInfo login(Emp emp) {
+        // 1.调用mapper方法，根据username和password查询员工信息
+        Emp e = empMapper.getInfoByUsernameAndPassword(emp);
+        Map<String,Object> claims = new HashMap<>();
+        claims.put("id",e.getId());
+        claims.put("username",e.getUsername());
+        String  jwt = JwtUtils.generateJwt(claims);
+        // 2.判断员工信息是否存在，若存在则组装
+        if(e != null){
+            return new LoginInfo(e.getId(),e.getUsername(),e.getPassword(),jwt);
+        }
+        return null;
+
     }
 }

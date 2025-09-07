@@ -38,4 +38,6 @@ public interface EmpMapper {
 
     @MapKey("name,num")
     List<Map<String, Object>> countStudentCountData();
+
+    Emp getInfoByUsernameAndPassword(Emp emp);
 }
