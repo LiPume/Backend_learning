@@ -144,4 +144,5 @@
     <select id="getInfoByUsernameAndPassword" resultType="com.itheima.pojo.Emp">
         select id,username,password from emp where username = #{username} and password = #{password}
     </select>
+
 </mapper>

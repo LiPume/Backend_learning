@@ -1,0 +1,380 @@
+2025-09-08 18:28:13.234 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 21.0.2 with PID 35668 (E:\Project\BackEnd_learning\web-code\web-ai-project02\tlias-web-management\target\classes started by Dell in E:\Project\BackEnd_learning\web-code\web-ai-project02)
+2025-09-08 18:28:13.236 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-09-08 18:28:15.029 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-09-08 18:28:15.041 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-08 18:28:15.044 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-09-08 18:28:15.045 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-08 18:28:15.134 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-09-08 18:28:15.134 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1822 ms
+2025-09-08 18:28:16.625 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-09-08 18:28:16.645 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-09-08 18:28:16.651 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 3.907 seconds (process running for 7.652)
+2025-09-08 18:28:50.281 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-08 18:28:50.282 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-09-08 18:28:50.287 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 5 ms
+2025-09-08 18:28:50.309 [http-nio-8080-exec-1] INFO  com.itheima.filter.TokenFilter-登录请求 , 直接放行
+2025-09-08 18:28:50.518 [http-nio-8080-exec-1] INFO  com.itheima.controller.LoginController-登录信息：Emp(id=null, username=wuyong, password=123456, name=null, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-09-08 18:28:50.573 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-09-08 18:28:52.330 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@236cc61e
+2025-09-08 18:28:52.332 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-09-08 18:28:55.402 [http-nio-8080-exec-2] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 18:28:55.402 [http-nio-8080-exec-6] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 18:28:55.405 [http-nio-8080-exec-6] INFO  com.itheima.controller.EmpController-查询所有班主任
+2025-09-08 18:28:55.468 [http-nio-8080-exec-2] INFO  com.itheima.controller.ClazzController-分页查询班级信息，参数：ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-09-08 18:29:00.609 [http-nio-8080-exec-4] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 18:29:00.613 [http-nio-8080-exec-4] INFO  com.itheima.controller.ClazzController-删除班级信息：5
+2025-09-08 18:29:00.763 [http-nio-8080-exec-5] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 18:29:00.768 [http-nio-8080-exec-5] INFO  com.itheima.controller.ClazzController-分页查询班级信息，参数：ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-09-08 18:29:01.592 [http-nio-8080-exec-7] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 18:29:01.592 [http-nio-8080-exec-3] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 18:29:01.593 [http-nio-8080-exec-7] INFO  com.itheima.controller.ClazzController-查询所有班级信息
+2025-09-08 18:29:01.596 [http-nio-8080-exec-3] INFO  com.itheima.controller.StudentController-学生信息分页查询:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-09-08 18:29:03.164 [http-nio-8080-exec-8] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 18:29:03.166 [http-nio-8080-exec-8] INFO  com.itheima.controller.ReportController-统计各个职位员工人数
+2025-09-08 18:29:03.177 [http-nio-8080-exec-10] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 18:29:03.179 [http-nio-8080-exec-10] INFO  com.itheima.controller.ReportController-统计员工性别数据
+2025-09-08 18:29:04.092 [http-nio-8080-exec-9] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 18:29:04.092 [http-nio-8080-exec-9] INFO  com.itheima.controller.ReportController-统计学生数量数据
+2025-09-08 18:29:04.099 [http-nio-8080-exec-1] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 18:29:04.100 [http-nio-8080-exec-1] INFO  com.itheima.controller.ReportController-统计学生学历数据
+2025-09-08 18:29:05.788 [http-nio-8080-exec-6] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 18:29:05.800 [http-nio-8080-exec-6] ERROR com.itheima.exception.GlobalExceptionHandler-服务器发生异常：{}
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource log/page.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.itheima.filter.TokenFilter.doFilter(TokenFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-09-08 18:29:06.894 [http-nio-8080-exec-2] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 18:29:06.896 [http-nio-8080-exec-2] INFO  com.itheima.controller.ReportController-统计学生数量数据
+2025-09-08 18:29:06.899 [http-nio-8080-exec-4] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 18:29:06.901 [http-nio-8080-exec-4] INFO  com.itheima.controller.ReportController-统计学生学历数据
+2025-09-08 18:29:08.048 [http-nio-8080-exec-5] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 18:29:08.048 [http-nio-8080-exec-7] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 18:29:08.049 [http-nio-8080-exec-5] INFO  com.itheima.controller.ReportController-统计各个职位员工人数
+2025-09-08 18:29:08.049 [http-nio-8080-exec-7] INFO  com.itheima.controller.ReportController-统计员工性别数据
+2025-09-08 18:29:08.942 [http-nio-8080-exec-10] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 18:29:08.943 [http-nio-8080-exec-3] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 18:29:08.943 [http-nio-8080-exec-3] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-09-08 18:29:08.945 [http-nio-8080-exec-10] INFO  com.itheima.controller.EmpController-分页请求参数：EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-09-08 18:29:14.087 [http-nio-8080-exec-8] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 18:29:14.090 [http-nio-8080-exec-8] INFO  com.itheima.controller.EmpController-删除员工：[43]
+2025-09-08 18:29:14.097 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Creating new transaction with name [com.itheima.service.impl.EmpServiceImpl.deleteByIds]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+2025-09-08 18:29:14.098 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@1414939179 wrapping com.mysql.cj.jdbc.ConnectionImpl@236cc61e] for JDBC transaction
+2025-09-08 18:29:14.101 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@1414939179 wrapping com.mysql.cj.jdbc.ConnectionImpl@236cc61e] to manual commit
+2025-09-08 18:29:14.134 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Suspending current transaction, creating new transaction with name [com.itheima.service.impl.EmpLogServiceImpl.insertLog]
+2025-09-08 18:29:14.135 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@1709239504 wrapping com.mysql.cj.jdbc.ConnectionImpl@5ec71708] for JDBC transaction
+2025-09-08 18:29:14.136 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@1709239504 wrapping com.mysql.cj.jdbc.ConnectionImpl@5ec71708] to manual commit
+2025-09-08 18:29:14.184 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2025-09-08 18:29:14.184 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@1709239504 wrapping com.mysql.cj.jdbc.ConnectionImpl@5ec71708]
+2025-09-08 18:29:14.195 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@1709239504 wrapping com.mysql.cj.jdbc.ConnectionImpl@5ec71708] after transaction
+2025-09-08 18:29:14.196 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Resuming suspended transaction after completion of inner transaction
+2025-09-08 18:29:14.198 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2025-09-08 18:29:14.198 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@1414939179 wrapping com.mysql.cj.jdbc.ConnectionImpl@236cc61e]
+2025-09-08 18:29:14.206 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@1414939179 wrapping com.mysql.cj.jdbc.ConnectionImpl@236cc61e] after transaction
+2025-09-08 18:29:14.228 [http-nio-8080-exec-1] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 18:29:14.233 [http-nio-8080-exec-1] INFO  com.itheima.controller.EmpController-分页请求参数：EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-09-08 18:29:36.250 [http-nio-8080-exec-9] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 18:29:36.250 [http-nio-8080-exec-6] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 18:29:36.250 [http-nio-8080-exec-6] INFO  com.itheima.controller.ClazzController-查询所有班级信息
+2025-09-08 18:29:36.251 [http-nio-8080-exec-9] INFO  com.itheima.controller.StudentController-学生信息分页查询:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-09-08 18:29:46.725 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-08 18:29:46.737 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-09-08 18:29:46.745 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-09-08 18:29:46.754 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-09-08 19:00:08.712 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 21.0.2 with PID 22296 (E:\Project\BackEnd_learning\web-code\web-ai-project02\tlias-web-management\target\classes started by Dell in E:\Project\BackEnd_learning\web-code\web-ai-project02)
+2025-09-08 19:00:08.713 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-09-08 19:00:09.816 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-09-08 19:00:09.824 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-08 19:00:09.826 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-09-08 19:00:09.827 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-08 19:00:09.858 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-09-08 19:00:09.858 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1111 ms
+2025-09-08 19:00:10.650 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-09-08 19:00:10.663 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-09-08 19:00:10.668 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 2.294 seconds (process running for 9.642)
+2025-09-08 19:00:18.904 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-08 19:00:18.905 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-09-08 19:00:18.909 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 3 ms
+2025-09-08 19:00:18.925 [http-nio-8080-exec-1] INFO  com.itheima.filter.TokenFilter-获取到jwt令牌为空, 返回错误结果
+2025-09-08 19:02:59.431 [http-nio-8080-exec-2] INFO  com.itheima.filter.TokenFilter-获取到jwt令牌为空, 返回错误结果
+2025-09-08 19:03:01.637 [http-nio-8080-exec-4] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 19:03:01.637 [http-nio-8080-exec-3] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 19:03:01.671 [http-nio-8080-exec-3] INFO  com.itheima.controller.EmpController-查询所有班主任
+2025-09-08 19:03:01.694 [http-nio-8080-exec-4] INFO  com.itheima.controller.ClazzController-分页查询班级信息，参数：ClazzQueryParam(page=1, pageSize=10, name=, begin=null, end=null)
+2025-09-08 19:03:01.709 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-09-08 19:03:02.385 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3fe03aa4
+2025-09-08 19:03:02.389 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-09-08 19:03:02.575 [http-nio-8080-exec-5] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 19:03:02.577 [http-nio-8080-exec-5] INFO  com.itheima.controller.StudentController-学生信息分页查询:StudentQueryParam(page=1, pageSize=10, name=, degree=null, clazzId=null)
+2025-09-08 19:03:02.581 [http-nio-8080-exec-6] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 19:03:02.583 [http-nio-8080-exec-6] INFO  com.itheima.controller.ClazzController-查询所有班级信息
+2025-09-08 19:03:09.031 [http-nio-8080-exec-7] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 19:03:09.031 [http-nio-8080-exec-8] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 19:03:09.032 [http-nio-8080-exec-8] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-09-08 19:03:09.037 [http-nio-8080-exec-7] INFO  com.itheima.controller.EmpController-分页请求参数：EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-09-08 19:03:11.672 [http-nio-8080-exec-9] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 19:03:11.673 [http-nio-8080-exec-9] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-09-08 19:03:12.522 [http-nio-8080-exec-1] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 19:03:12.522 [http-nio-8080-exec-10] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 19:03:12.523 [http-nio-8080-exec-10] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-09-08 19:03:12.525 [http-nio-8080-exec-1] INFO  com.itheima.controller.EmpController-分页请求参数：EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-09-08 19:03:17.006 [http-nio-8080-exec-2] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 19:03:17.062 [http-nio-8080-exec-2] INFO  com.itheima.controller.UploadController-上传成功！文件：微信图片_20250804152058.jpg
+2025-09-08 19:07:25.705 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-08 19:07:25.712 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-09-08 19:07:25.717 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-09-08 19:07:25.724 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-09-08 23:20:05.111 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 21.0.2 with PID 13572 (E:\Project\BackEnd_learning\web-code\web-ai-project02\tlias-web-management\target\classes started by Dell in E:\Project\BackEnd_learning\web-code\web-ai-project02)
+2025-09-08 23:20:05.112 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-09-08 23:20:06.725 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-09-08 23:20:06.738 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-08 23:20:06.740 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-09-08 23:20:06.740 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-08 23:20:06.806 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-09-08 23:20:06.806 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1663 ms
+2025-09-08 23:20:07.436 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-09-08 23:20:07.448 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-09-08 23:20:07.454 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 2.653 seconds (process running for 3.346)
+2025-09-08 23:21:07.316 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-08 23:21:07.317 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-09-08 23:21:07.320 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 2 ms
+2025-09-08 23:21:07.517 [http-nio-8080-exec-1] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 23:21:07.593 [http-nio-8080-exec-1] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-09-08 23:21:07.647 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-09-08 23:21:08.819 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2f31d5fc
+2025-09-08 23:21:08.824 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-09-08 23:21:09.447 [http-nio-8080-exec-3] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 23:21:09.447 [http-nio-8080-exec-2] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 23:21:09.447 [http-nio-8080-exec-3] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-09-08 23:21:09.466 [http-nio-8080-exec-2] INFO  com.itheima.controller.EmpController-分页请求参数：EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-09-08 23:21:11.501 [http-nio-8080-exec-4] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 23:21:11.501 [http-nio-8080-exec-5] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 23:21:11.503 [http-nio-8080-exec-5] INFO  com.itheima.controller.ReportController-统计学生学历数据
+2025-09-08 23:21:11.503 [http-nio-8080-exec-4] INFO  com.itheima.controller.ReportController-统计学生数量数据
+2025-09-08 23:21:12.033 [http-nio-8080-exec-10] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 23:21:12.046 [http-nio-8080-exec-10] ERROR com.itheima.exception.GlobalExceptionHandler-服务器发生异常：{}
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource log/page.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.itheima.filter.TokenFilter.doFilter(TokenFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-09-08 23:21:35.315 [http-nio-8080-exec-7] INFO  com.itheima.filter.TokenFilter-登录请求 , 直接放行
+2025-09-08 23:21:35.368 [http-nio-8080-exec-7] INFO  com.itheima.controller.LoginController-登录信息：Emp(id=null, username=wuyong, password=123456, name=null, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2025-09-08 23:21:38.933 [http-nio-8080-exec-8] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 23:21:38.933 [http-nio-8080-exec-9] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 23:21:38.934 [http-nio-8080-exec-9] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-09-08 23:21:38.936 [http-nio-8080-exec-8] INFO  com.itheima.controller.EmpController-分页请求参数：EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-09-08 23:21:52.384 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-08 23:21:52.391 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-09-08 23:21:52.397 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-09-08 23:21:52.412 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-09-08 23:23:49.029 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 21.0.2 with PID 4132 (E:\Project\BackEnd_learning\web-code\web-ai-project02\tlias-web-management\target\classes started by Dell in E:\Project\BackEnd_learning\web-code\web-ai-project02)
+2025-09-08 23:23:49.030 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-09-08 23:23:49.893 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-09-08 23:23:49.903 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-08 23:23:49.905 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-09-08 23:23:49.905 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-08 23:23:49.938 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-09-08 23:23:49.939 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 882 ms
+2025-09-08 23:23:50.646 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-09-08 23:23:50.661 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-09-08 23:23:50.667 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 1.901 seconds (process running for 2.435)
+2025-09-08 23:23:54.688 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-08 23:23:54.688 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-09-08 23:23:54.689 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-09-08 23:23:54.749 [http-nio-8080-exec-5] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 23:23:54.749 [http-nio-8080-exec-1] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 23:23:54.770 [http-nio-8080-exec-5] INFO  com.itheima.controller.DeptController-查询全部部门数据
+2025-09-08 23:23:54.781 [http-nio-8080-exec-1] INFO  com.itheima.controller.EmpController-分页请求参数：EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-09-08 23:23:54.786 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-09-08 23:23:55.055 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@29220df2
+2025-09-08 23:23:55.057 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-09-08 23:24:00.276 [http-nio-8080-exec-2] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 23:24:00.305 [http-nio-8080-exec-2] INFO  com.itheima.controller.EmpController-删除员工：[47]
+2025-09-08 23:24:00.318 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Creating new transaction with name [com.itheima.service.impl.EmpServiceImpl.deleteByIds]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+2025-09-08 23:24:00.322 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@570694621 wrapping com.mysql.cj.jdbc.ConnectionImpl@29220df2] for JDBC transaction
+2025-09-08 23:24:00.328 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@570694621 wrapping com.mysql.cj.jdbc.ConnectionImpl@29220df2] to manual commit
+2025-09-08 23:24:00.378 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Suspending current transaction, creating new transaction with name [com.itheima.service.impl.EmpLogServiceImpl.insertLog]
+2025-09-08 23:24:00.380 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@730234295 wrapping com.mysql.cj.jdbc.ConnectionImpl@7762add2] for JDBC transaction
+2025-09-08 23:24:00.382 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@730234295 wrapping com.mysql.cj.jdbc.ConnectionImpl@7762add2] to manual commit
+2025-09-08 23:24:00.418 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2025-09-08 23:24:00.418 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@730234295 wrapping com.mysql.cj.jdbc.ConnectionImpl@7762add2]
+2025-09-08 23:24:00.430 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@730234295 wrapping com.mysql.cj.jdbc.ConnectionImpl@7762add2] after transaction
+2025-09-08 23:24:00.430 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Resuming suspended transaction after completion of inner transaction
+2025-09-08 23:24:00.432 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2025-09-08 23:24:00.432 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@570694621 wrapping com.mysql.cj.jdbc.ConnectionImpl@29220df2]
+2025-09-08 23:24:00.439 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@570694621 wrapping com.mysql.cj.jdbc.ConnectionImpl@29220df2] after transaction
+2025-09-08 23:24:00.493 [http-nio-8080-exec-4] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 23:24:00.498 [http-nio-8080-exec-4] INFO  com.itheima.controller.EmpController-分页请求参数：EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-09-08 23:24:03.293 [http-nio-8080-exec-8] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 23:24:03.298 [http-nio-8080-exec-8] INFO  com.itheima.controller.EmpController-查询员工：42
+2025-09-08 23:24:07.467 [http-nio-8080-exec-9] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 23:24:07.527 [http-nio-8080-exec-9] INFO  com.itheima.controller.UploadController-上传成功！文件：微信图片_20250804115124.jpg
+2025-09-08 23:24:09.118 [http-nio-8080-exec-6] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 23:24:09.232 [http-nio-8080-exec-6] INFO  com.itheima.controller.EmpController-更新员工：Emp(id=42, username=jj, password=123456, name=林俊杰, gender=1, phone=18956782345, job=5, salary=1222222, image=, entryDate=2025-09-01, deptId=7, createTime=2025-09-02T13:54:39, updateTime=2025-09-02T13:54:39, deptName=null, exprList=[])
+2025-09-08 23:24:09.247 [http-nio-8080-exec-6] DEBUG o.s.jdbc.support.JdbcTransactionManager-Creating new transaction with name [com.itheima.service.impl.EmpServiceImpl.update]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+2025-09-08 23:24:09.248 [http-nio-8080-exec-6] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@2013113795 wrapping com.mysql.cj.jdbc.ConnectionImpl@29220df2] for JDBC transaction
+2025-09-08 23:24:09.248 [http-nio-8080-exec-6] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@2013113795 wrapping com.mysql.cj.jdbc.ConnectionImpl@29220df2] to manual commit
+2025-09-08 23:24:09.265 [http-nio-8080-exec-6] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2025-09-08 23:24:09.265 [http-nio-8080-exec-6] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@2013113795 wrapping com.mysql.cj.jdbc.ConnectionImpl@29220df2]
+2025-09-08 23:24:09.268 [http-nio-8080-exec-6] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@2013113795 wrapping com.mysql.cj.jdbc.ConnectionImpl@29220df2] after transaction
+2025-09-08 23:24:09.293 [http-nio-8080-exec-3] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 23:24:09.294 [http-nio-8080-exec-3] INFO  com.itheima.controller.EmpController-分页请求参数：EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-09-08 23:24:15.712 [http-nio-8080-exec-7] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 23:24:15.714 [http-nio-8080-exec-7] INFO  com.itheima.controller.EmpController-查询员工：42
+2025-09-08 23:24:19.038 [http-nio-8080-exec-10] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 23:24:19.049 [http-nio-8080-exec-10] INFO  com.itheima.controller.UploadController-上传成功！文件：微信图片_20250804115124.jpg
+2025-09-08 23:24:21.703 [http-nio-8080-exec-5] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 23:24:21.705 [http-nio-8080-exec-5] INFO  com.itheima.controller.EmpController-更新员工：Emp(id=42, username=jj, password=123456, name=林俊杰, gender=1, phone=18956782345, job=5, salary=1222222, image=https://java-ai-tlias-lee.oss-cn-beijing.aliyuncs.com/2025/09/613e29d4-d4f5-45e4-bc2c-840bab56e764.jpg, entryDate=2025-09-01, deptId=7, createTime=2025-09-02T13:54:39, updateTime=2025-09-08T23:24:09, deptName=null, exprList=[])
+2025-09-08 23:24:21.705 [http-nio-8080-exec-5] DEBUG o.s.jdbc.support.JdbcTransactionManager-Creating new transaction with name [com.itheima.service.impl.EmpServiceImpl.update]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+2025-09-08 23:24:21.706 [http-nio-8080-exec-5] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@1391844456 wrapping com.mysql.cj.jdbc.ConnectionImpl@29220df2] for JDBC transaction
+2025-09-08 23:24:21.706 [http-nio-8080-exec-5] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@1391844456 wrapping com.mysql.cj.jdbc.ConnectionImpl@29220df2] to manual commit
+2025-09-08 23:24:21.715 [http-nio-8080-exec-5] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2025-09-08 23:24:21.716 [http-nio-8080-exec-5] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@1391844456 wrapping com.mysql.cj.jdbc.ConnectionImpl@29220df2]
+2025-09-08 23:24:21.718 [http-nio-8080-exec-5] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@1391844456 wrapping com.mysql.cj.jdbc.ConnectionImpl@29220df2] after transaction
+2025-09-08 23:24:21.757 [http-nio-8080-exec-1] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 23:24:21.759 [http-nio-8080-exec-1] INFO  com.itheima.controller.EmpController-分页请求参数：EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-09-08 23:24:24.016 [http-nio-8080-exec-2] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 23:24:24.017 [http-nio-8080-exec-2] INFO  com.itheima.controller.EmpController-查询员工：44
+2025-09-08 23:24:29.424 [http-nio-8080-exec-4] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 23:24:29.432 [http-nio-8080-exec-4] INFO  com.itheima.controller.UploadController-上传成功！文件：微信图片_20250804152104.jpg
+2025-09-08 23:24:32.196 [http-nio-8080-exec-8] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 23:24:32.198 [http-nio-8080-exec-8] INFO  com.itheima.controller.EmpController-更新员工：Emp(id=44, username=dv, password=123456, name=陶吉吉, gender=1, phone=12244556677, job=3, salary=444555, image=https://java-ai-tlias-lee.oss-cn-beijing.aliyuncs.com/2025/09/5e2ce2f8-31e7-4146-b535-73c0a08a0201.jpg, entryDate=2025-09-08, deptId=7, createTime=2025-09-02T14:43:14, updateTime=2025-09-02T14:43:14, deptName=null, exprList=[EmpExpr(id=4, empId=44, begin=2025-09-20, end=2025-10-19, company=HDU, job=33)])
+2025-09-08 23:24:32.199 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Creating new transaction with name [com.itheima.service.impl.EmpServiceImpl.update]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+2025-09-08 23:24:32.199 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@1763540978 wrapping com.mysql.cj.jdbc.ConnectionImpl@29220df2] for JDBC transaction
+2025-09-08 23:24:32.199 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@1763540978 wrapping com.mysql.cj.jdbc.ConnectionImpl@29220df2] to manual commit
+2025-09-08 23:24:32.215 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2025-09-08 23:24:32.215 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@1763540978 wrapping com.mysql.cj.jdbc.ConnectionImpl@29220df2]
+2025-09-08 23:24:32.217 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@1763540978 wrapping com.mysql.cj.jdbc.ConnectionImpl@29220df2] after transaction
+2025-09-08 23:24:32.236 [http-nio-8080-exec-9] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 23:24:32.237 [http-nio-8080-exec-9] INFO  com.itheima.controller.EmpController-分页请求参数：EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-09-08 23:24:36.134 [http-nio-8080-exec-6] INFO  com.itheima.filter.TokenFilter-令牌合法, 放行
+2025-09-08 23:24:36.154 [http-nio-8080-exec-6] ERROR com.itheima.exception.GlobalExceptionHandler-服务器发生异常：{}
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource log/page.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.itheima.filter.TokenFilter.doFilter(TokenFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)

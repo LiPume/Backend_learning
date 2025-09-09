@@ -1,6 +1,8 @@
 package com.itheima.filter;
 
+import com.itheima.utils.CurrentHolder;
 import com.itheima.utils.JwtUtils;
+import io.jsonwebtoken.Claims;
 import jakarta.servlet.*;
 import jakarta.servlet.annotation.WebFilter;
 import jakarta.servlet.http.HttpServletRequest;
@@ -38,7 +40,10 @@ public class TokenFilter implements Filter {
         // 4.判断token是否正确
         // 解析token，如果解析失败，返回错误结果（未登录）。
         try {
-            JwtUtils.parseJWT(jwt);
+            Claims claims = JwtUtils.parseJWT(jwt);
+            Integer empId = Integer.valueOf(claims.get("id").toString());
+            CurrentHolder.setCurrentId(empId);
+            log.info("当前用户id为:{}", empId);
         } catch (Exception e) {
             log.info("解析令牌失败, 返回错误结果");
             response.setStatus(HttpStatus.SC_UNAUTHORIZED);
@@ -48,5 +53,8 @@ public class TokenFilter implements Filter {
         // 5.放行
         log.info("令牌合法, 放行");
         filterChain.doFilter( request, response);
+
+        // 6.释放线程资源
+        CurrentHolder.remove();
     }
 }

@@ -41,7 +41,7 @@ public class EmpServiceImpl implements EmpService {
 
         Page<Emp> p = (Page<Emp>)empList;
 
-        return new PageResult<Emp>(p.getTotal(),p.getResult());
+        return new PageResult<>(p.getTotal(),p.getResult());
     }
 
     @Transactional(rollbackFor = Exception.class)

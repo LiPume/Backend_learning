@@ -2,6 +2,7 @@ package com.itheima.mapper;
 
 import com.itheima.pojo.Emp;
 import com.itheima.pojo.EmpQueryParam;
+import com.itheima.pojo.OperateLog;
 import org.apache.ibatis.annotations.*;
 
 import java.time.LocalDate;
@@ -40,4 +41,6 @@ public interface EmpMapper {
     List<Map<String, Object>> countStudentCountData();
 
     Emp getInfoByUsernameAndPassword(Emp emp);
+
+
 }

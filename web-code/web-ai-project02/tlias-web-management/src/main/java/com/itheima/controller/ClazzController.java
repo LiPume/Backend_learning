@@ -1,5 +1,6 @@
 package com.itheima.controller;
 
+import com.itheima.anno.Log;
 import com.itheima.pojo.Clazz;
 import com.itheima.pojo.ClazzQueryParam;
 import com.itheima.pojo.PageResult;
@@ -24,6 +25,7 @@ public class ClazzController {
         PageResult<Clazz> pageResult = clazzService.page(clazzQueryParam);
         return Result.success(pageResult);
     }
+    @Log
     @PostMapping
     public Result save(@RequestBody Clazz clazz) {
         log.info("添加班级信息，参数：{}", clazz);
@@ -37,14 +39,14 @@ public class ClazzController {
         Clazz clazz = clazzService.getInfo(id);
         return Result.success(clazz);
     }
-
+    @Log
     @PutMapping
     public Result update(@RequestBody Clazz clazz){
         log.info("更新班级信息，参数：{}", clazz);
         clazzService.update(clazz);
         return Result.success();
     }
-
+    @Log
     @DeleteMapping("/{id}")
     public Result delete(@PathVariable Integer id){
         log.info("删除班级信息：{}",id);
